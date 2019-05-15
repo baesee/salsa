@@ -1,7 +1,6 @@
 package com.billlong.salsaexample.mapper;
 
 import com.billlong.salsaexample.model.SalsaUser;
-import org.apache.catalina.User;
 import org.apache.ibatis.annotations.*;
 
 import java.util.List;

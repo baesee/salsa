@@ -16,6 +16,7 @@ public class SalsaInfo {
     private String phone;
     private String teacher;
     private String writer;
+    private String type;
 
     public int getInfo_idx() {
         return info_idx;
@@ -127,5 +128,13 @@ public class SalsaInfo {
 
     public void setWriter(String writer) {
         this.writer = writer;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 }
