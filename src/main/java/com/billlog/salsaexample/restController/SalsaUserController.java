@@ -1,7 +1,7 @@
-package com.billlong.salsaexample.restController;
+package com.billlog.salsaexample.restController;
 
-import com.billlong.salsaexample.mapper.UserMapper;
-import com.billlong.salsaexample.model.SalsaUser;
+import com.billlog.salsaexample.mapper.UserMapper;
+import com.billlog.salsaexample.model.SalsaUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

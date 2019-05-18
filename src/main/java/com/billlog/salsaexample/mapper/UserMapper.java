@@ -1,6 +1,6 @@
-package com.billlong.salsaexample.mapper;
+package com.billlog.salsaexample.mapper;
 
-import com.billlong.salsaexample.model.SalsaUser;
+import com.billlog.salsaexample.model.SalsaUser;
 import org.apache.ibatis.annotations.*;
 
 import java.util.List;
@@ -25,6 +25,7 @@ public interface UserMapper {
             "VALUES (#{user_id}, #{user_pwd}, #{user_name}, #{user_addr}, #{user_phone}, #{user_gender}, #{user_birth}, #{user_email}, #{user_type})")
     int createUser(SalsaUser user);
 
+    //유저 정보 수정
     @Update("UPDATE salsa_user SET user_name = #{user_name} ,user_addr = #{user_addr} " +
             ",user_phone = #{user_phone} ,user_gender =#{user_gender} ,user_email = #{user_email} " +
             "WHERE user_idx = #{user_idx}")

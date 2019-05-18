@@ -1,4 +1,4 @@
-package com.billlong.salsaexample.model;
+package com.billlog.salsaexample.model;
 
 public class SalsaCommnet {
     private int comment_idx;

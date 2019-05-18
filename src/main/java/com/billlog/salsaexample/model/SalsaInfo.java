@@ -1,4 +1,4 @@
-package com.billlong.salsaexample.model;
+package com.billlog.salsaexample.model;
 
 public class SalsaInfo {
 
@@ -15,6 +15,8 @@ public class SalsaInfo {
     private String location;
     private String phone;
     private String teacher;
+    private int hit_count;
+    private int recommend_count;
     private String writer;
     private String type;
 
@@ -120,6 +122,22 @@ public class SalsaInfo {
 
     public void setTeacher(String teacher) {
         this.teacher = teacher;
+    }
+
+    public int getHit_count() {
+        return hit_count;
+    }
+
+    public void setHit_count(int hit_count) {
+        this.hit_count = hit_count;
+    }
+
+    public int getRecommend_count() {
+        return recommend_count;
+    }
+
+    public void setRecommend_count(int recommend_count) {
+        this.recommend_count = recommend_count;
     }
 
     public String getWriter() {

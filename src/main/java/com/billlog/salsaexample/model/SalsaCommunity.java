@@ -1,4 +1,4 @@
-package com.billlong.salsaexample.model;
+package com.billlog.salsaexample.model;
 
 public class SalsaCommunity {
     private int community_idx;

@@ -1,4 +1,4 @@
-package com.billlong.salsaexample;
+package com.billlog.salsaexample;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
