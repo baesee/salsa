@@ -21,13 +21,14 @@ public interface UserMapper {
     boolean deleteUserById(@Param("user_idx") int user_idx);
 
     //유저 등록
-    @Insert("INSERT INTO salsa_user(`user_id`, `user_pwd`, `user_name`, `user_addr`, `user_phone`, `user_gender`, `user_birth`, `user_email`, `user_type`) " +
-            "VALUES (#{user_id}, #{user_pwd}, #{user_name}, #{user_addr}, #{user_phone}, #{user_gender}, #{user_birth}, #{user_email}, #{user_type})")
+    @Insert("INSERT INTO salsa_user(`user_id`, `user_pwd`, `user_name`, `user_city`, `user_phone`, `user_birth`, `user_email`, `user_role`, `user_team`) " +
+            "VALUES (#{user_id}, #{user_pwd}, #{user_name}, #{user_city}, #{user_phone}, #{user_birth}, #{user_email}, #{user_role}, #{user_team})")
     int createUser(SalsaUser user);
 
     //유저 정보 수정
-    @Update("UPDATE salsa_user SET user_name = #{user_name} ,user_addr = #{user_addr} " +
-            ",user_phone = #{user_phone} ,user_gender =#{user_gender} ,user_email = #{user_email} " +
+    @Update("UPDATE salsa_user SET user_name = #{user_name} ,user_city = #{user_city} " +
+            ",user_phone = #{user_phone} , user_email = #{user_email} " +
+            ",user_team = #{user_team}" +
             "WHERE user_idx = #{user_idx}")
     int modifyUserById(SalsaUser user);
 }

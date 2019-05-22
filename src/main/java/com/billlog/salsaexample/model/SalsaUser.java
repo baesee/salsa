@@ -5,12 +5,11 @@ public class SalsaUser {
     private String user_id;
     private String user_pwd;
     private String user_name;
-    private String user_addr;
-    private String user_phone;
+    private int user_city;
     private String user_gender;
-    private String user_birth;
     private String user_email;
     private String user_type;
+    private String user_team;
 
     public int getUser_idx() {
         return user_idx;
@@ -44,20 +43,12 @@ public class SalsaUser {
         this.user_name = user_name;
     }
 
-    public String getUser_addr() {
-        return user_addr;
+    public int getUser_city() {
+        return user_city;
     }
 
-    public void setUser_addr(String user_addr) {
-        this.user_addr = user_addr;
-    }
-
-    public String getUser_phone() {
-        return user_phone;
-    }
-
-    public void setUser_phone(String user_phone) {
-        this.user_phone = user_phone;
+    public void setUser_city(int user_city) {
+        this.user_city = user_city;
     }
 
     public String getUser_gender() {
@@ -66,14 +57,6 @@ public class SalsaUser {
 
     public void setUser_gender(String user_gender) {
         this.user_gender = user_gender;
-    }
-
-    public String getUser_birth() {
-        return user_birth;
-    }
-
-    public void setUser_birth(String user_birth) {
-        this.user_birth = user_birth;
     }
 
     public String getUser_email() {
@@ -90,5 +73,13 @@ public class SalsaUser {
 
     public void setUser_type(String user_type) {
         this.user_type = user_type;
+    }
+
+    public String getUser_team() {
+        return user_team;
+    }
+
+    public void setUser_team(String user_team) {
+        this.user_team = user_team;
     }
 }
